@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="UTF-8">
-		<title>Escolinha :: Galeria</title>
-		<link rel='stylesheet' type="text/css" href="style.css">
 
-		<script type="text/javascript" src="../javascript/jquery-3.4.1.js"></script>
-		
-		<script type="text/javascript">
-				//<![CDATA[
-	$(document).ready(function() {
-		$('.abre-fecha').hide();
-		$('<div id="tela" ><img src="../img/imagem1.PNG" alt="Descrição da imagem" /></div>')
-		.insertAfter('#galeria');
-		$('.foto').click(function(event) {
-			event.preventDefault();
-			$('#tela img').remove();
-			$('<img />')
-			.attr('src', $(this).attr('src'))
-			.css('opacity', '0.3')
-			.appendTo('#tela')
-			.animate({opacity: 1 }, 2000);
-		});
-	});
-   // ]]>
-      	</script>
+<head>
+    <meta charset="UTF-8">
+    <title>Escolinha :: Galeria</title>
+    <link rel='stylesheet' type="text/css" href="style.css">
 
-	</head>
-	<body>
+    <script type="text/javascript" src="../javascript/jquery-3.4.1.js"></script>
+
+    <script type="text/javascript">
+        //<![CDATA[
+        $(document).ready(function() {
+            $('.abre-fecha').hide();
+            $('<div id="tela" ><img src="../img/imagem1.PNG" alt="Descrição da imagem" /></div>')
+                .insertAfter('#galeria');
+            $('.foto').click(function(event) {
+                event.preventDefault();
+                $('#tela img').remove();
+                $('<img />')
+                    .attr('src', $(this).attr('src'))
+                    .css('opacity', '0.3')
+                    .appendTo('#tela')
+                    .animate({
+                        opacity: 1
+                    }, 2000);
+            });
+        });
+        // ]]>
+    </script>
+
+</head>
+
+<body>
 
     <header>
         <div id="logo"> </div>
         <div class="topnav">
-            <a  href="./index.html">Início</a>
+            <a href="./index.html">Início</a>
             <a href="./inscr.html">Inscrições</a>
             <a class="active" href="./galeria.html">Galeria</a>
             <a href="./contato.html">Contatos</a>
@@ -42,23 +46,24 @@
     </header>
 
 
-		<div id="tudo">
-		<h2>Nossa Galeria</h2>
+    <div id="tudo">
+        <h2>Nossa Galeria</h2>
 
-<div id="galeria">
-<a href="../img/imagem1.PNG"><img src="../img/imagem1.PNG" alt="Descrição da foto" width="100" height="75" class="foto" /></a>
-<a href="../img/imagem2.PNG"><img src="../img/imagem2.PNG" alt="Descrição da foto" width="100" height="75"  class="foto" /></a>
-<a href="../img/imagem3.PNG"><img src="../img/imagem3.PNG" alt="Descrição da foto" width="100" height="75"  class="foto" /></a>
-<a href="../img/imagem4.PNG"><img src="../img/imagem4.PNG" alt="Descrição da foto" width="100" height="75"  class="foto" /></a>
-<a href="../img/imagem5.PNG"><img src="../img/imagem5.PNG" alt="Descrição da foto" width="100" height="75"  class="foto" /></a>
-<a href="../img/imagem6.PNG"><img src="../img/imagem6.PNG" alt="Descrição da foto" width="100" height="75"  class="foto" /></a>
-<a href="../img/imagem7.PNG"><img src="../img/imagem7.PNG" alt="Descrição da foto" width="100" height="75"  class="foto" /></a>
-</div>
-
-<span class="abre-fecha">Clique para ampliar</span>
-</div>
-        <div id="rodapeGal">
-           <p> Todos os Direitos Reservados</p>
+        <div id="galeria">
+            <a href="../img/imagem1.PNG"><img src="../img/imagem1.PNG" alt="Descrição da foto" width="100" height="75" class="foto" /></a>
+            <a href="../img/imagem2.PNG"><img src="../img/imagem2.PNG" alt="Descrição da foto" width="100" height="75" class="foto" /></a>
+            <a href="../img/imagem3.PNG"><img src="../img/imagem3.PNG" alt="Descrição da foto" width="100" height="75" class="foto" /></a>
+            <a href="../img/imagem4.PNG"><img src="../img/imagem4.PNG" alt="Descrição da foto" width="100" height="75" class="foto" /></a>
+            <a href="../img/imagem5.PNG"><img src="../img/imagem5.PNG" alt="Descrição da foto" width="100" height="75" class="foto" /></a>
+            <a href="../img/imagem6.PNG"><img src="../img/imagem6.PNG" alt="Descrição da foto" width="100" height="75" class="foto" /></a>
+            <a href="../img/imagem7.PNG"><img src="../img/imagem7.PNG" alt="Descrição da foto" width="100" height="75" class="foto" /></a>
         </div>
-	</body>
+
+        <span class="abre-fecha">Clique para ampliar</span>
+    </div>
+    <div id="rodapeGal">
+        <p> Todos os Direitos Reservados</p>
+    </div>
+</body>
+
 </html>

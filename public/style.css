@@ -1,43 +1,47 @@
 /* Corpo dos documentos definem a cor de fundo */
+
 body {
-    
     background: #cdc8b1;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 
 /* Cabeçalho  e menú das paginas estão localizados aqui*/
+
 header {
     background-color: #333;
-    width: 100%;
     padding-bottom: 0px;
     margin-bottom: 0px;
-    
+    /* width: 800px; */
 }
 
-
-#logo{
-    background: url(../img/logo.png) no-repeat;
+.logo img {
     float: left;
-    padding-bottom: 190px ;
-    padding-left: 220px;
-    margin-left: 100px;
-    display: block;
-    background-size: 200px;
-    background-color: #333;
-
+    width: 180px;
+    left: 100px;
+    top: 100px;
+    /* display: block;
+    background-size: 80px; */
+    /* background-color: #121212; */
 }
+
+.topnav img {
+    width: 150px;
+    left: 100px;
+    top: 100px;
+}
+
 .topnav {
     background-color: #333;
     overflow: hidden;
     padding-bottom: 100px;
-    padding-right: 0px;
+    padding-right: 10px;
     padding-top: 70px;
-    
 }
 
-.topnav .login{
+.topnav .login {
     float: right;
 }
-
 
 .topnav a {
     float: left;
@@ -47,7 +51,6 @@ header {
     text-decoration: none;
     font-size: 17px;
     font: arial;
-
 }
 
 .topnav a:hover {
@@ -60,34 +63,33 @@ header {
     color: white;
 }
 
+
 /* Pagina Principal com a parte Inicial */
 
-#principal{
+#principal {
     margin-top: 0px;
     padding-top: 0px;
-   background-color: #f2f2f2;
+    background-color: #f2f2f2;
 }
-#capa{
-    
+
+#capa {
     float: left;
-    margin-top: -40px;
+    margin-top: 5px;
     margin-left: 90px;
 }
 
-#depoimento{
+#depoimento {
     float: right;
     margin-top: -40px;
     margin-right: 40px;
 }
 
-.imagemDepoimento{
-
+.imagemDepoimento {
     width: 400px;
     height: 307px;
-
 }
 
-#ensinar{
+#ensinar {
     padding-top: 30px;
     width: 770px;
     float: left;
@@ -95,27 +97,22 @@ header {
     margin-left: 90px;
 }
 
-
-#ensinar p{
+#ensinar p {
     text-align: justify;
-
 }
 
-#video{
+#video {
     padding-top: 30px;
     float: right;
     margin-top: -40px;
     margin-right: 40px;
-
 }
 
-#rodape p{
-
+#rodape p {
     padding-top: 0px;
     margin-top: 700px;
     text-align: center;
 }
-
 
 #img1 {
     max-width: 50%;
@@ -162,16 +159,17 @@ select {
     right: 4%;
 }
 
-#rodapeInsc p{
-
+#rodapeInsc p {
     padding-top: 0px;
     margin-top: 520px;
     text-align: center;
 }
+
+
 /* Pagina da Galeria */
 
 #tudo {
- border-radius: 5px;
+    border-radius: 5px;
     background-color: #f2f2f2;
     padding: 30px;
     margin-top: 60px;
@@ -179,44 +177,40 @@ select {
     top: 21%;
     left: 7%;
     right: 4%;
-
-    }
-.foto {
-    border:none;
 }
 
-#tudo h2{
+.foto {
+    border: none;
+}
+
+#tudo h2 {
     text-align: center;
 }
 
-#tudo a img{
+#tudo a img {
     margin-left: 10px;
     margin-bottom: 30px;
 }
 
-
-#galeria{
+#galeria {
     margin-left: 170px;
 }
 
-#tela img{
+#tela img {
     margin-left: 270px;
 }
 
 
-
 /* CSS para efeitos jQuery  */
+
 #tela {
     margin-left: 250px;
-    width:620px;
-    height:410px;
+    width: 620px;
+    height: 410px;
     margin: 15px 0;
-    
 }
 
-
-#rodapeGal p{
-
+#rodapeGal p {
     padding-top: 0px;
     margin-top: 650px;
     text-align: center;
@@ -236,9 +230,7 @@ select {
     right: 4%;
 }
 
-
-#rodapeCont p{
-
+#rodapeCont p {
     padding-top: 0px;
     margin-top: 480px;
     text-align: center;
@@ -261,6 +253,7 @@ select {
 .sobreNos p {
     text-align: justify;
 }
+
 .sobreNos h2 {
     text-align: center;
 }
@@ -270,14 +263,14 @@ select {
     height: 300px;
     margin: 0 auto;
     display: block;
-} 
+}
 
-#rodapeSN p{
-
+#rodapeSN p {
     padding-top: 0px;
     margin-top: 1140px;
     text-align: center;
 }
+
 
 /* Tela LOGIN  */
 
@@ -294,25 +287,25 @@ select {
 
 
 /* Configuração da Imagem */
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
-}
 
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
 
 img.avatar {
-  width: 10%;
-  border-radius: 50%;
+    width: 10%;
+    border-radius: 50%;
 }
 
-
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 
 .loginC input[type=button] {
@@ -327,18 +320,14 @@ input[type=text], input[type=password] {
 }
 
 
-
-
 /* Esqueceu a senha  */
+
 span.psw {
-  float: right;
-  padding-top: 16px;
+    float: right;
+    padding-top: 16px;
 }
 
-
-
-#rodapeL p{
-
+#rodapeL p {
     padding-top: 0px;
     margin-top: 410px;
     text-align: center;
@@ -357,30 +346,30 @@ span.psw {
     left: 7%;
     right: 4%;
 }
-.adminC h2{
-    text-align: center;
-}
-.adminC h3{
+
+.adminC h2 {
     text-align: center;
 }
 
-.adminC ul li{
+.adminC h3 {
+    text-align: center;
+}
 
+.adminC ul li {
     display: inline;
-    padding-left:130px;
-
+    padding-left: 130px;
 }
-.adminC ul li a{
+
+.adminC ul li a {
     text-decoration: none;
-
 }
 
-#rodapeAd p{
-
+#rodapeAd p {
     padding-top: 0px;
     margin-top: 775px;
     text-align: center;
 }
+
 
 /* Tela Cadastrar Aluno */
 
@@ -406,15 +395,15 @@ span.psw {
     cursor: pointer;
 }
 
-
-#rodapeAlunoP p{
-
+#rodapeAlunoP p {
     padding-top: 0px;
     margin-top: 520px;
     text-align: center;
 }
 
+
 /* Tela Cadastrar Turma */
+
 .turmaP {
     border-radius: 5px;
     background-color: #f2f2f2;
@@ -437,15 +426,15 @@ span.psw {
     cursor: pointer;
 }
 
-
-#rodapeTurmaP p{
-
+#rodapeTurmaP p {
     padding-top: 0px;
     margin-top: 450px;
     text-align: center;
 }
 
+
 /* Tela Cadastrar Instrutor*/
+
 .instrutorP {
     border-radius: 5px;
     background-color: #f2f2f2;
@@ -468,9 +457,7 @@ span.psw {
     cursor: pointer;
 }
 
-
-#rodapeInstrutorP p{
-
+#rodapeInstrutorP p {
     padding-top: 0px;
     margin-top: 375px;
     text-align: center;
