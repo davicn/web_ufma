@@ -4,16 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <link rel='stylesheet' type="text/css" href="style.css">
+    <script type="text/javascript" src="../javascript/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(() => {
+            $(confirma).click(() => {
+                // alert('Inscrição realizada com sucesso!');
+                // window.location.replace('./index.html');
+                if (confirm("Do u want to continue?")) {
+                    location.href = './index.html'
+                }
+            });
+        });
+    </script>
     <title>Escolinha :: Inscrições</title>
 </head>
 
 <body>
     <header>
-        <div id="logo"> </div>
+        <div class="logo">
+            <img src="../img/logo.png"> </div>
         <div class="topnav">
-            <a  href="./index.html">Início</a>
+            <a href="./index.html">Início</a>
             <a class="active" href="./inscr.html">Inscrições</a>
-            <a  href="./galeria.html">Galeria</a>
+            <a href="./galeria.html">Galeria</a>
             <a href="./contato.html">Contatos</a>
             <a href="./sobreNos.html">Sobre nós</a>
             <a class="login" href="./login.html">Entrar</a>
@@ -47,13 +60,13 @@
                 <option value="turma2">Sub 16 (14 - 16)</option>
             </select>
 
-            <input type="submit" value="Enviar">
+            <input id='confirma' type="submit" value="Enviar">
         </form>
     </div>
 
-        <div id="rodapeInsc">
-           <p> Todos os Direitos Reservados</p>
-        </div>
+    <div id="rodapeInsc">
+        <p> Todos os Direitos Reservados</p>
+    </div>
 
 </body>
 
